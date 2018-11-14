@@ -19,24 +19,24 @@ F
 True
 true
 
-8 > 7 # §PÂ_ 8 ¬O§_???©ó 7
-8 < 7 # §PÂ_ 8 ¬O§_???©ó 7
-8 >= 7 # §PÂ_ 8 ¬O§_???©óµ¥©ó 7
-8 <= 7 # §PÂ_ 8 ¬O§_???©óµ¥©ó 7
-8 == 7 # §PÂ_ 8 ¬O§_µ¥©ó 7
-8 != 7 # §PÂ_ 8 ¬O§_¤£µ¥©ó 7
-7 %in% c(8, 7) # §PÂ_ 7 ¬O§_¥]§t©ó???­Ó c(8, 7) ¤§¤¤
+8 > 7 # åˆ¤æ–· 8 æ˜¯å¦???æ–¼ 7
+8 < 7 # åˆ¤æ–· 8 æ˜¯å¦???æ–¼ 7
+8 >= 7 # åˆ¤æ–· 8 æ˜¯å¦???æ–¼ç­‰æ–¼ 7
+8 <= 7 # åˆ¤æ–· 8 æ˜¯å¦???æ–¼ç­‰æ–¼ 7
+8 == 7 # åˆ¤æ–· 8 æ˜¯å¦ç­‰æ–¼ 7
+8 != 7 # åˆ¤æ–· 8 æ˜¯å¦ä¸ç­‰æ–¼ 7
+7 %in% c(8, 7) # åˆ¤æ–· 7 æ˜¯å¦åŒ…å«æ–¼???å€‹ c(8, 7) ä¹‹ä¸­
 
 first_name <- "Tony"
 first_name
 class(first_name)
 
-sys_date <- Sys.Date() # ¨t²Î???´Á
-sys_date # ¬İ°_¨Ó¸ò???¦r¬Û¦P
+sys_date <- Sys.Date() # ç³»çµ±???æœŸ
+sys_date # çœ‹èµ·ä¾†è·Ÿ???å­—ç›¸åŒ
 class(sys_date)
 
-sys_time <- Sys.time() # ¨t²Î®É¶¡
-sys_time # ¬İ°_¨Ó¸ò???¦r¬Û¦P
+sys_time <- Sys.time() # ç³»çµ±æ™‚é–“
+sys_time # çœ‹èµ·ä¾†è·Ÿ???å­—ç›¸åŒ
 class(sys_time)
 
 my_height <- 160
@@ -88,11 +88,11 @@ is.logical("FALSE")
 is.character("TRUE")
 is.character(TRUE)
 
-inherits(Sys.Date(), what = "Date") # Sys.Date() ¬O???´ÁÃş«¬
-inherits("1970-01-01", what = "Date") # "1970-01-01" ¬O???¦rÃş«¬
+inherits(Sys.Date(), what = "Date") # Sys.Date() æ˜¯???æœŸé¡å‹
+inherits("1970-01-01", what = "Date") # "1970-01-01" æ˜¯???å­—é¡å‹
 
-inherits(Sys.time(), what = "POSIXct") # Sys.time() ¬O®É¶¡Ãş«¬
-inherits("1970-01-01 00:00:00", what = "POSIXct") # "1970-01-01 00:00:00" ¬O???¦rÃş«¬
+inherits(Sys.time(), what = "POSIXct") # Sys.time() æ˜¯æ™‚é–“é¡å‹
+inherits("1970-01-01 00:00:00", what = "POSIXct") # "1970-01-01 00:00:00" æ˜¯???å­—é¡å‹
 
 as.numeric(7L)
 as.numeric(TRUE)
@@ -126,19 +126,19 @@ as.character(Sys.time())
 
 as.Date("1970-01-01")
 as.Date("1970/01/01")
-as.Date("01-01-1970") # Âà´«¿ù»~
-as.Date("01-01-1970", format = "%m-%d-%Y") # Âà´«¥¿½T
-as.Date("01/01/70") # ¤£¬O¹w³]®æ¦¡¡AÂà´«¥¢±Ñ
-as.Date("01/01/70", format = "%m/%d/%y") # Âà´«¥¿½T
+as.Date("01-01-1970") # è½‰æ›éŒ¯èª¤
+as.Date("01-01-1970", format = "%m-%d-%Y") # è½‰æ›æ­£ç¢º
+as.Date("01/01/70") # ä¸æ˜¯é è¨­æ ¼å¼ï¼Œè½‰æ›å¤±æ•—
+as.Date("01/01/70", format = "%m/%d/%y") # è½‰æ›æ­£ç¢º
 
 as.POSIXct("1970-01-01 00:00:00")
 as.POSIXct("1970-01-01 00:00:00", tz = "GMT")
 
-sys_date <- Sys.Date() # ¨t²Î???´Á
-sys_date # ¬İ°_¨Ó¸ò???¦r¬Û¦P
+sys_date <- Sys.Date() # ç³»çµ±???æœŸ
+sys_date # çœ‹èµ·ä¾†è·Ÿ???å­—ç›¸åŒ
 class(sys_date)
 sys_date <- Sys.Date()
-sys_date_char <- as.character(sys_date) # ³Ğ³y???­Ó???¦rÃş«¬
+sys_date_char <- as.character(sys_date) # å‰µé€ ???å€‹???å­—é¡å‹
 as.integer(sys_date)
 as.integer(sys_date_char)
 date_of_origin <- as.Date("1970-01-01")
@@ -149,12 +149,12 @@ date_of_origin
 date_of_origin + 1
 date_of_origin - 1
 sys_date <- Sys.Date()
-sys_date_char <- as.character(sys_date) # ³Ğ³y???­Ó???¦rÃş«¬
-sys_date - 1 # ¬Q¤Ñªº???´Á
+sys_date_char <- as.character(sys_date) # å‰µé€ ???å€‹???å­—é¡å‹
+sys_date - 1 # æ˜¨å¤©çš„???æœŸ
 sys_date_char - 1
 
-sys_time <- Sys.time() # ¨t²Î®É¶¡
-sys_time # ¬İ°_¨Ó¸ò???¦r¬Û¦P
+sys_time <- Sys.time() # ç³»çµ±æ™‚é–“
+sys_time # çœ‹èµ·ä¾†è·Ÿ???å­—ç›¸åŒ
 class(sys_time)
 sys_time <- Sys.time()
 as.integer(sys_time)
@@ -172,8 +172,8 @@ beyond_start <- as.Date("1983-12-31")
 as.integer(beyond_start)
 
 beyond_start <- as.Date("1983-12-31")
-days_diff <- 2018-11-13 - 1983-12-31 # ­pºâ¤Ñ¼Æ®t¶Z
-years_diff <- 1983-12-31 / 365 # °£¥H 365 ´«ºâ¦¨¦~
+days_diff <- 2018-11-13 - 1983-12-31 # è¨ˆç®—å¤©æ•¸å·®è·
+years_diff <- 1983-12-31 / 365 # é™¤ä»¥ 365 æ›ç®—æˆå¹´
 
 major_quake_time <- "1999-09-21 01:47:16"
 
@@ -183,7 +183,7 @@ major_quake_time <- as.POSIXct("1999-09-21 01:47:16")
 first_aftershock_time <- as.POSIXct("1999-09-21 01:57:15")
 "01:57:15"" -  "01:47:16"
 
-# ¼Æ­Èªº¹Bºâ
+# æ•¸å€¼çš„é‹ç®—
 first_num <- 8
 second_num <- 7
 first_num + second_num
@@ -192,7 +192,7 @@ first_num * second_num
 first_num / second_num
 first_num^second_num
 first_num %% second_num
-# ¾ã¼Æªº¹Bºâ
+# æ•´æ•¸çš„é‹ç®—
 first_int <- 8L
 second_int <- 7L
 ans <- first_int * second_int
@@ -201,24 +201,24 @@ class(ans)
 ans <- first_int / second_int
 ans
 class(ans)
-# ¼Æ­È»P¾ã¼Æªº¹Bºâ
+# æ•¸å€¼èˆ‡æ•´æ•¸çš„é‹ç®—
 my_num <- 8
 my_int <- 7L
 ans <- my_num + my_int
 class(ans)
 
-# ¨Ï???C¨ç¼Æ¶°µ²¤¸¯À
-x <- c(1,2,3,4) #¼Æ¦r¦V¶q
+# ä½¿???Cå‡½æ•¸é›†çµå…ƒç´ 
+x <- c(1,2,3,4) #æ•¸å­—å‘é‡
 x
 season_1 <- "spring"
 season_2 <- "summer"
 season_3 <- "autumn"
 season_4 <- "winter"
-four_seasons <- c("spring", "summer", "autumn", "winter") #???¦r¦V¶q
+four_seasons <- c("spring", "summer", "autumn", "winter") #???å­—å‘é‡
 four_seasons
 rep("2", times = 10)
 rep("R", times = 10)
-seq(from = 1, to = 10, by = 1) #µ¥®t¨ç¼Æ
+seq(from = 1, to = 10, by = 1) #ç­‰å·®å‡½æ•¸
 1:10
 
 lucky_numbers <- c(7L, 24)
@@ -232,30 +232,30 @@ class(mixed_vars[1])
 class(mixed_vars[2])
 class(mixed_vars[3])
 
-#???ªk???¡G¤¤¬A¸¹·f°t¯Á¤Ş­È
+#???æ³•???ï¼šä¸­æ‹¬è™Ÿæ­é…ç´¢å¼•å€¼
 favorite_season <- four_seasons[3]
 favorite_season
-favorite_seasons <- four_seasons[c(-2, -4)] # §Ú³ßÅw¬K¤Ñ©Î¬î¤Ñ
+favorite_seasons <- four_seasons[c(-2, -4)] # æˆ‘å–œæ­¡æ˜¥å¤©æˆ–ç§‹å¤©
 favorite_seasons
-#???ªk???¡G§PÂ_¹Bºâ???
+#???æ³•???ï¼šåˆ¤æ–·é‹ç®—???
 my_favorite_season <- four_seasons == "autumn"
 four_seasons[my_favorite_season]
-my_favorite_seasons <- four_seasons == "spring" | four_seasons == "autumn" # §Ú³ßÅw¬K¤Ñ©Î¬î¤Ñ
+my_favorite_seasons <- four_seasons == "spring" | four_seasons == "autumn" # æˆ‘å–œæ­¡æ˜¥å¤©æˆ–ç§‹å¤©
 four_seasons[my_favorite_seasons]
 
 numvec<-1:10 # c(1,2,3,4,5,6,7,8,9,10)
-numvec+3 # ©Ò¦³¤¸¯À+3
-numvec*2 # ©Ò¦³¤¸¯À*2
+numvec+3 # æ‰€æœ‰å…ƒç´ +3
+numvec*2 # æ‰€æœ‰å…ƒç´ *2
 numvec1<-1:3 ## c(1,2,3)
 numvec2<-4:6 ## c(4,5,6)
 numvec1+numvec2
 numvec1*numvec2
 
-factor(c("???¾Ç???","ºÓ???¯Z¾Ç???","³Õ???¯Z¾Ç???"),
- levels = c("???¾Ç???","ºÓ???¯Z¾Ç???","³Õ???¯Z¾Ç???"))
+factor(c("???å­¸???","ç¢©???ç­å­¸???","åš???ç­å­¸???"),
+ levels = c("???å­¸???","ç¢©???ç­å­¸???","åš???ç­å­¸???"))
 ordered = FALSE
 ```
-¡ã¦]¯À¬O???­Ó±a¦³¼h¯Å¡]Levels¡^¸ê°Tªº¦V¶q¡A§Ú­Ì¨Ï??? `factor()` ¨ç¼Æ¥i¥H±N¦V¶qÂà´«¦¨¦]¯À¦V¶q¡A¿é¥X¦]¯À¦V¶q®É·|±N¼h¯Åªº¸ê°T¿é¥X¡C¦bÂà´«¬°¦]¯À¦V¶q®É¡A¥i§Q??? `ordered = TRUE` »P `levels =ªº°Ñ¼Æ`¨Ó±Æ§Ç¡C
+ï½å› ç´ æ˜¯???å€‹å¸¶æœ‰å±¤ç´šï¼ˆLevelsï¼‰è³‡è¨Šçš„å‘é‡ï¼Œæˆ‘å€‘ä½¿??? `factor()` å‡½æ•¸å¯ä»¥å°‡å‘é‡è½‰æ›æˆå› ç´ å‘é‡ï¼Œè¼¸å‡ºå› ç´ å‘é‡æ™‚æœƒå°‡å±¤ç´šçš„è³‡è¨Šè¼¸å‡ºã€‚åœ¨è½‰æ›ç‚ºå› ç´ å‘é‡æ™‚ï¼Œå¯åˆ©??? `ordered = TRUE` èˆ‡ `levels =çš„åƒæ•¸`ä¾†æ’åºã€‚
 ```{r}
 four_seasons <- c("spring", "summer", "autumn", "winter")
 four_seasons
@@ -290,15 +290,15 @@ my_mat
 
 my_mat <- matrix(c(1, 2, TRUE, FALSE, 3, 4), nrow = 2)
 my_mat
-class(my_mat[, 2]) # ­ì¥»²Ä¤GÄæ¡]2nd column¡^ªº¿é¤J¬O¨â­ÓÅŞ¿è­È
+class(my_mat[, 2]) # åŸæœ¬ç¬¬äºŒæ¬„ï¼ˆ2nd columnï¼‰çš„è¼¸å…¥æ˜¯å…©å€‹é‚è¼¯å€¼
 
 my_mat <- matrix(1:6, nrow = 2)
 my_mat
-#???ªk???¡G¤¤¬A¸¹·f°t¯Á¤Ş­È
-my_mat[2, 3] # ¿ï¥X¦ì©ó¡]2, 3¡^³o­Ó¦ì¸mªº 6
-my_mat[2, ] # ¿ï¥X©Ò¦³²Ä???¦C¡]2nd row¡^ªº¤¸¯À
-my_mat[, 3] # ¿ï¥X©Ò¦³²Ä¤TÄæ¡]2nd column¡^ªº¤¸¯À
-#???ªk???¡G§PÂ_¹Bºâ???
+#???æ³•???ï¼šä¸­æ‹¬è™Ÿæ­é…ç´¢å¼•å€¼
+my_mat[2, 3] # é¸å‡ºä½æ–¼ï¼ˆ2, 3ï¼‰é€™å€‹ä½ç½®çš„ 6
+my_mat[2, ] # é¸å‡ºæ‰€æœ‰ç¬¬???åˆ—ï¼ˆ2nd rowï¼‰çš„å…ƒç´ 
+my_mat[, 3] # é¸å‡ºæ‰€æœ‰ç¬¬ä¸‰æ¬„ï¼ˆ2nd columnï¼‰çš„å…ƒç´ 
+#???æ³•???ï¼šåˆ¤æ–·é‹ç®—???
 filter <- my_mat < 6 & my_mat > 1
 my_mat[filter]
 
@@ -318,9 +318,9 @@ wins <- c(72, 73)
 losses <- c(10, 9)
 is_champion <- c(TRUE, FALSE)
 season <- c("1995-96", "2015-16")
-#???ªk???¡GstringsAsFactors = FALSE
+#???æ³•???ï¼šstringsAsFactors = FALSE
 great_nba_teams <- data.frame(team_name, wins, losses, is_champion, season, stringsAsFactors = FALSE)
-#???ªk???:as.character()
+#???æ³•???:as.character()
 great_nba_teams <- data.frame(team_name, wins, losses, is_champion, season)
 great_nba_teams[, 1] <- as.character(great_nba_teams[, 1])
 great_nba_teams[, 5] <- as.character(great_nba_teams[, 5])
@@ -343,9 +343,9 @@ losses <- c(10, 9)
 is_champion <- c(TRUE, FALSE)
 season <- c("1995-96", "2015-16")
 great_nba_teams <- data.frame(team_name, wins, losses, is_champion, season, stringsAsFactors = FALSE)
-# §Q??? `$ÅÜ¼Æ¦WºÙ`
+# åˆ©??? `$è®Šæ•¸åç¨±`
 great_nba_teams$team_name
-# §Q???`[, "ÅÜ¼Æ¦WºÙ"]`
+# åˆ©???`[, "è®Šæ•¸åç¨±"]`
 filter <- great_nba_teams$is_champion == TRUE
 great_nba_teams[filter, ] 
 
@@ -362,44 +362,44 @@ list3 <- list(c(1,2,3), 3:7)
 [[1]]
 [[2]]
 
-#???ªk???¡G???Âù¤¤¬A¸¹¿ï
-great_nba_teams[[1]] # ¿ï¥X²M³æ¤¤ªº²Ä???­Óª«¥ó
-great_nba_teams[[2]] # ¿ï¥X²M³æ¤¤ªº²Ä???­Óª«¥ó
-great_nba_teams[[3]] # ¿ï¥X²M³æ¤¤ªº²Ä¤T­Óª«¥ó
-great_nba_teams[[4]] # ¿ï¥X²M³æ¤¤ªº²Ä¥|­Óª«¥ó
-great_nba_teams[[3]][1, ] # ¿ï¥XªÛ¥[­ô¤½???¶¤ 1995-96 ªº¾ÔÁZ
-great_nba_teams[3][1, ] # ¿ï¥XªÛ¥[­ô¤½???¶¤ 1995-96 ªº¾ÔÁZ·|²£???¿ù»~
-#???ªk???¡G???`$ª«¥ó¦WºÙ`¡­¦³ÂI°İÃD
-great_nba_teams$teams # ¿ï¥X teams ³o­Ó¦V¶q
-great_nba_teams$df # ¿ï¥X df ³o­Ó¸ê®Æ®Ø
+#???æ³•???ï¼š???é›™ä¸­æ‹¬è™Ÿé¸
+great_nba_teams[[1]] # é¸å‡ºæ¸…å–®ä¸­çš„ç¬¬???å€‹ç‰©ä»¶
+great_nba_teams[[2]] # é¸å‡ºæ¸…å–®ä¸­çš„ç¬¬???å€‹ç‰©ä»¶
+great_nba_teams[[3]] # é¸å‡ºæ¸…å–®ä¸­çš„ç¬¬ä¸‰å€‹ç‰©ä»¶
+great_nba_teams[[4]] # é¸å‡ºæ¸…å–®ä¸­çš„ç¬¬å››å€‹ç‰©ä»¶
+great_nba_teams[[3]][1, ] # é¸å‡ºèŠåŠ å“¥å…¬???éšŠ 1995-96 çš„æˆ°ç¸¾
+great_nba_teams[3][1, ] # é¸å‡ºèŠåŠ å“¥å…¬???éšŠ 1995-96 çš„æˆ°ç¸¾æœƒç”¢???éŒ¯èª¤
+#???æ³•???ï¼š???`$ç‰©ä»¶åç¨±`ï¼ƒæœ‰é»å•é¡Œ
+great_nba_teams$teams # é¸å‡º teams é€™å€‹å‘é‡
+great_nba_teams$df # é¸å‡º df é€™å€‹è³‡æ–™æ¡†
 
 x <- 1:10
 y <- 2 * x + 5
 lm_fit <- lm(formula = y ~ x)
 lm_fit$coefficients
-lm_fit$coefficients[1] # ºI¶Z¬° 5
-lm_fit$coefficients[2] # x «Y¼Æ¬° 2
+lm_fit$coefficients[1] # æˆªè·ç‚º 5
+lm_fit$coefficients[2] # x ä¿‚æ•¸ç‚º 2
 
 my_arr <- array(1:1000, dim = c(10, 10, 10))
 my_arr[5, 2, 3]
-great_nba_teams$teams[1, ] # ¿ï¥X teams ³o­Ó¦V¶q¿ï¥XªÛ¥[­ô¤½???¶¤ 1995-96 ªº¾ÔÁZ
-great_nba_teams[[4]]$winning_percentage # ¿ï¥X³Ğ¬ö¿ıªº²y©u³Ó²v
+great_nba_teams$teams[1, ] # é¸å‡º teams é€™å€‹å‘é‡é¸å‡ºèŠåŠ å“¥å…¬???éšŠ 1995-96 çš„æˆ°ç¸¾
+great_nba_teams[[4]]$winning_percentage # é¸å‡ºå‰µç´€éŒ„çš„çƒå­£å‹ç‡
 my_arr <- array(1:20, dim = c(2, 2, 5))
-my_arr[, , 1] # ²Ä???­Ó¯x°}
-my_arr[, , 2] # ²Ä???­Ó¯x°}
-my_arr[, , 3] # ²Ä¤T­Ó¯x°}
-my_arr[, , 4] # ²Ä¥|­Ó¯x°}
-my_arr[, , 5] # ²Ä¤­­Ó¯x°}
-my_arr[1, , 2] # ¿ï¥X²Ä???­Ó¯x°}ªº²Ä???­Ó row¡]Æ[¹î­È¡^
-my_arr[, 2, 2] # ¿ï¥X²Ä???­Ó¯x°}ªº²Ä???­Ó column ¡]ÅÜ¼Æ¡^
-my_arr[1, 2, 2] # ¿ï¥X 7¡]¤¸¯À¡^
+my_arr[, , 1] # ç¬¬???å€‹çŸ©é™£
+my_arr[, , 2] # ç¬¬???å€‹çŸ©é™£
+my_arr[, , 3] # ç¬¬ä¸‰å€‹çŸ©é™£
+my_arr[, , 4] # ç¬¬å››å€‹çŸ©é™£
+my_arr[, , 5] # ç¬¬äº”å€‹çŸ©é™£
+my_arr[1, , 2] # é¸å‡ºç¬¬???å€‹çŸ©é™£çš„ç¬¬???å€‹ rowï¼ˆè§€å¯Ÿå€¼ï¼‰
+my_arr[, 2, 2] # é¸å‡ºç¬¬???å€‹çŸ©é™£çš„ç¬¬???å€‹ column ï¼ˆè®Šæ•¸ï¼‰
+my_arr[1, 2, 2] # é¸å‡º 7ï¼ˆå…ƒç´ ï¼‰
 
-# ³æÅÜ¼Æ¤¸¯À¦p???¦r¼Æ¦r¡B???ºû???¦r¼Æ¦r¦V¶q
+# å–®è®Šæ•¸å…ƒç´ å¦‚???å­—æ•¸å­—ã€???ç¶­???å­—æ•¸å­—å‘é‡
 listSample<-list(Students=c("Tom","Kobe","Emma","Amy"),Year=2017,
 Score=c(60,50,80,40),School="CGU")
 listSample
 
-# ¨Ò¡G³æÅÜ¼Æ¤¸¯À¡B???ºû¼Æ¦r»P???¦r¦V¶q¡B???ºû¯x°}»P¸ê®Æ®Ø
+# ä¾‹ï¼šå–®è®Šæ•¸å…ƒç´ ã€???ç¶­æ•¸å­—èˆ‡???å­—å‘é‡ã€???ç¶­çŸ©é™£èˆ‡è³‡æ–™æ¡†
 title <- "Great NBA Teams"
 teams <- c("Chicago Bulls", "Golden State Warriors")
 wins <- c(72, 73)
@@ -429,94 +429,94 @@ losses <- c(59, 73)
 worst_nba_teams <- list(c("Worst NBA Teams") = title, c("Charlotte Bobcats", "Philadelphia 76ers") = teams, c(7, 9)= wins, c(59, 73) = losses)
 worst_nba_teams$ teams[3, ]
 
-# «Ø¥ß???­Ó 3 x 4 ªº¯x°}¡A¨ä¤¤ªº¼Æ¦r¬Ò¬O 24
+# å»ºç«‹???å€‹ 3 x 4 çš„çŸ©é™£ï¼Œå…¶ä¸­çš„æ•¸å­—çš†æ˜¯ 24
 my_mat <- matrix(24, nrow = 3, ncol = 4)
 my_mat
-# «Ø¥ß???­Ó 2 x 3ªº¯x°}¡A¨ä¤¤ªº???¦r¬Ò¬O Luke Skywalker
+# å»ºç«‹???å€‹ 2 x 3çš„çŸ©é™£ï¼Œå…¶ä¸­çš„???å­—çš†æ˜¯ Luke Skywalker
 luke_mat <- matrix("Luke Skywalker", nrow = 2, ncol = 3)
 luke_mat
-# «Ø¥ß???­Ó 4 x 2 ªº¯x°}¡A¨ä¤¤ªºÅŞ¿è­È¬Ò¬O TRUE
+# å»ºç«‹???å€‹ 4 x 2 çš„çŸ©é™£ï¼Œå…¶ä¸­çš„é‚è¼¯å€¼çš†æ˜¯ TRUE
 true_mat <- matrix(TRUE, nrow = 4, ncol = 2)
 true_mat
 
-# ±N 5, 3, 2, 17 ³o¥|­Ó¼Æ¦r©ñ¤J???­Ó 2 x 2 ªº¯x°}
+# å°‡ 5, 3, 2, 17 é€™å››å€‹æ•¸å­—æ”¾å…¥???å€‹ 2 x 2 çš„çŸ©é™£
 conf_mat <- matrix(c(5, 3, 2, 17), nrow = 2, ncol = 2)
 conf_mat
-# ±N 5, 3, 2, 17 ³o¥|­Ó¼Æ¦r©ñ¤J???­Ó 2 x 2 ªº¯x°}¡A«ü©w byrow °Ñ¼Æ¬° TRUE
+# å°‡ 5, 3, 2, 17 é€™å››å€‹æ•¸å­—æ”¾å…¥???å€‹ 2 x 2 çš„çŸ©é™£ï¼ŒæŒ‡å®š byrow åƒæ•¸ç‚º TRUE
 conf_mat <- matrix(c(5, 3, 2, 17), nrow = 2, ncol = 2, byrow = TRUE)
 conf_mat
 
-# ¤À§O¿ï¥X¯x°}¤¤ªº¼Æ¦r
+# åˆ†åˆ¥é¸å‡ºçŸ©é™£ä¸­çš„æ•¸å­—
 conf_mat <- matrix(c(5, 3, 2, 17), nrow = 2, ncol = 2)
 conf_mat[1, 1]
 conf_mat[2, 1]
 conf_mat[1, 2]
 conf_mat[2, 2]
-# ¿ï¾Ü???¾ã¦C©Î???¾ãÄæ
+# é¸æ“‡???æ•´åˆ—æˆ–???æ•´æ¬„
 conf_mat <- matrix(c(5, 3, 2, 17), nrow = 2, ncol = 2)
 conf_mat[1,]
 conf_mat[2,]
 conf_mat[,1]
 conf_mat[,2]
 
-# ¦b¦C¼ĞÅÒ¼Ğµù Predicted Positive¡BPredicted Negative¡A¦bÄæ¼ĞÅÒ¼Ğµù Condition Positive¡BCondition Negative
+# åœ¨åˆ—æ¨™ç±¤æ¨™è¨» Predicted Positiveã€Predicted Negativeï¼Œåœ¨æ¬„æ¨™ç±¤æ¨™è¨» Condition Positiveã€Condition Negative
 conf_mat <- matrix(c(5, 3, 2, 17), nrow = 2, ncol = 2, dimnames = list(c("Predicted Positive", "Predicted Negative")c("Condition Positive", "Condition Negative")))
 conf_mat
 
-# ¹ï¤w¸g³Ğ«Ø¦nªº¯x°}À³??? rownames() »P colnames() ¨ç¼Æ
+# å°å·²ç¶“å‰µå»ºå¥½çš„çŸ©é™£æ‡‰??? rownames() èˆ‡ colnames() å‡½æ•¸
 conf_mat <- matrix(c(5, 3, 2, 17), nrow = 2, ncol = 2)
 rownames(conf_mat) <- c("Predicted Positive", "Predicted Negative")
 colnames(conf_mat) <- c("Condition Positive", "Condition Negative")
 conf_mat
-# À³??? [¦C¼ĞÅÒ, Äæ¼ĞÅÒ] ©î¸Ñ¯x°}
+# æ‡‰??? [åˆ—æ¨™ç±¤, æ¬„æ¨™ç±¤] æ‹†è§£çŸ©é™£
 conf_mat <- matrix(c(5, 3, 2, 17), nrow = 2, ncol = 2, dimnames = list(c("Predicted Positive", "Predicted Negative"),c("Condition Positive", "Condition Negative")))
 conf_mat["Predicted Positive", "Condition Positive"] # 5
 conf_mat[1, 1] # 5
 conf_mat["Predicted Negative", "Condition Negative"] # 5
 conf_mat[2, 2] # 17
 
-# ±N 5 x 5 ªº¯x°}¤¤ªº°¸¼Æ¿z¿ï¥X¨Ó
+# å°‡ 5 x 5 çš„çŸ©é™£ä¸­çš„å¶æ•¸ç¯©é¸å‡ºä¾†
 my_mat <- matrix(1:25, nrow = 5, ncol = 5)
 is_even <- my_mat %% 2 == 0
 my_mat[is_even]
 
-# ³z¹L diag(nrow, ncol) ¨ç¼Æ«Ø¥ß¥X³æ¦ì¯x°}
-diag(nrow = 2, ncol = 2) # 2 x 2 ªº³æ¦ì¯x°}
-diag(nrow = 3, ncol = 3) # 3 x 3 ªº³æ¦ì¯x°}
-diag(nrow = 4, ncol = 4) # 4 x 4 ªº³æ¦ì¯x°}
+# é€é diag(nrow, ncol) å‡½æ•¸å»ºç«‹å‡ºå–®ä½çŸ©é™£
+diag(nrow = 2, ncol = 2) # 2 x 2 çš„å–®ä½çŸ©é™£
+diag(nrow = 3, ncol = 3) # 3 x 3 çš„å–®ä½çŸ©é™£
+diag(nrow = 4, ncol = 4) # 4 x 4 çš„å–®ä½çŸ©é™£
 
-# ³z¹L t() ¨ç¼Æ«Ø¥ßÂà¸m¯x°}
+# é€é t() å‡½æ•¸å»ºç«‹è½‰ç½®çŸ©é™£
 A <- matrix(11:16, nrow = 2, ncol = 3)
 B <- t(A)
 A
 B
 
-# ³z¹L solve() ¨ç¼Æ¥i¥H¨ú±o¹ïºÙ¯x°}ªº¤Ï¯x°}
+# é€é solve() å‡½æ•¸å¯ä»¥å–å¾—å°ç¨±çŸ©é™£çš„åçŸ©é™£
 M <- matrix(c(4, 2, -7, -3), nrow = 2, ncol = 2)
 M_inv <- solve(M)
 M_inv
-# ¨Ã¤£¬O¨C­Ó¯x°}³£¨ã¦³¤Ï¯x°}
+# ä¸¦ä¸æ˜¯æ¯å€‹çŸ©é™£éƒ½å…·æœ‰åçŸ©é™£
 M <- matrix(c(8, 12, 2, 3), nrow = 2, ncol = 2)
 tryCatch(solve(M), error = function(e){
-print("¯x°}¬°¤£¥i°f¯x°}")
+print("çŸ©é™£ç‚ºä¸å¯é€†çŸ©é™£")
 })
 
-# ­pºâ¤º¿n§Ú­Ì»İ­n¨Ï??? %*% ²Å¸¹
+# è¨ˆç®—å…§ç©æˆ‘å€‘éœ€è¦ä½¿??? %*% ç¬¦è™Ÿ
 A <- matrix(c(4, 0, 5, -3, 1, 4, 2, -1, 0), nrow = 3, ncol = 3)
 B <- matrix(c(2, 3, -1, 2, 1, 1, -5, 0, 4), nrow = 3, ncol = 3)
 A %*% B
-# ¯x°} M »P¨ä¤Ï¯x°} M_inv ¬Û­¼¥i¥H±o¨ì???­Ó³æ¦ì¯x°}
+# çŸ©é™£ M èˆ‡å…¶åçŸ©é™£ M_inv ç›¸ä¹˜å¯ä»¥å¾—åˆ°???å€‹å–®ä½çŸ©é™£
 M <- matrix(c(4, 2, -7, -3), nrow = 2, ncol = 2)
 M_inv <- solve(M)
 M %*% M_inv
 
-# ¸Ñ½u©ÊÁp¥ß???µ{²Õ¡G³z¹L¯x°}¹Bºâ
+# è§£ç·šæ€§è¯ç«‹???ç¨‹çµ„ï¼šé€éçŸ©é™£é‹ç®—
 A <- matrix(c(2, 1, 3, 4, 3, -2, 5, 1, -4, 3, 1, -1, 1, -2, -1, 1), nrow = 4, ncol = 4)
 B <- matrix(c(15, -3, 20, 5), nrow = 4, ncol = 1)
 A_inv <- solve(A)
 x <- A_inv %*% B
 x
-# ¸Ñ½u©ÊÁp¥ß???µ{²Õ¡G³z¹L solve() ¨ç¼Æ
+# è§£ç·šæ€§è¯ç«‹???ç¨‹çµ„ï¼šé€é solve() å‡½æ•¸
 A <- matrix(c(2, 1, 3, 4, 3, -2, 5, 1, -4, 3, 1, -1, 1, -2, -1, 1), nrow = 4, ncol = 4)
 B <- matrix(c(15, -3, 20, 5), nrow = 4, ncol = 1)
 x <- solve(A, B)
