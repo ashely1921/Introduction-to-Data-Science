@@ -27,9 +27,9 @@ losses <- c(10, 9)
 is_champion <- c(TRUE, FALSE)
 season <- c("1995-96", "2015-16")
 great_nba_teams <- data.frame(team_name, wins, losses, is_champion, season, stringsAsFactors = FALSE)
-# �Q??? `$�ܼƦW��`
+# §Q??? `$ÅÜ¼Æ¦WºÙ`
 great_nba_teams$ is_champion
-# �Q???`[, "�ܼƦW��"]`
+# §Q???`[, "ÅÜ¼Æ¦WºÙ"]`
 great_nba_teams[, "is_champion"]
 
 
