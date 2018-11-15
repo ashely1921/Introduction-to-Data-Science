@@ -8,23 +8,23 @@ if (weather == "sunny"){
 
 score<-59
 if(score>=60){
-  print("¤Î®æ")
+  print("åŠæ ¼")
 }else{
-  print("¤£¤Î®æ")
+  print("ä¸åŠæ ¼")
 }
 score<-80
 if(score>=60){
-  print("¤Î®æ")
+  print("åŠæ ¼")
 }else{
-  print("¤£¤Î®æ")
+  print("ä¸åŠæ ¼")
 }
 
 my_seq <- 1:10
 for (i in my_seq) {
   if (i %% 2 == 0) {
-    print(paste(i, "¬O°¸¼Æ"))
+    print(paste(i, "æ˜¯å¶æ•¸"))
   } else {
-    print(paste(i, "¬O©_¼Æ"))
+    print(paste(i, "æ˜¯å¥‡æ•¸"))
   }
 }
 
@@ -40,21 +40,21 @@ if (weather == "sunny"){
 
 score<-95
 if(score>=90){
-  print("Àu¨q")
+  print("å„ªç§€")
 }else if(score>=60){
-  print("¤Î®æ")
+  print("åŠæ ¼")
 }else{
-  print("¤£¤Î®æ")
+  print("ä¸åŠæ ¼")
 }
 
 my_seq <- 1:10
 for (i in my_seq) {
   if (i %% 3 == 0) {
-    print(paste(i, "¥i¥H³Q 3 ¾ã°£"))
+    print(paste(i, "å¯ä»¥è¢« 3 æ•´é™¤"))
   } else if (i %% 3 == 1) {
-    print(paste(i, "°£¥H 3 ¾l¼Æ¬O 1"))
+    print(paste(i, "é™¤ä»¥ 3 é¤˜æ•¸æ˜¯ 1"))
   } else {
-    print(paste(i, "°£¥H 3 ¾l¼Æ¬O 2"))
+    print(paste(i, "é™¤ä»¥ 3 é¤˜æ•¸æ˜¯ 2"))
   }
 }
 
@@ -70,29 +70,29 @@ if (weather == "sunny"){
   print("Couch potato.")
 }
 
-CHscore<-95 ##°ê???¦¨ÁZ
-ENscore<-55 ##­^???¦¨ÁZ
+CHscore<-95 ##åœ‹???æˆç¸¾
+ENscore<-55 ##è‹±???æˆç¸¾
 if(CHscore>=60){
   if(ENscore>=60){
-    print("¥ş³¡¤Î®æ")
+    print("å…¨éƒ¨åŠæ ¼")
   }else{
-    print("°ê???¤Î®æ¡A­^???¦A¥[ªo")
+    print("åœ‹???åŠæ ¼ï¼Œè‹±???å†åŠ æ²¹")
   }
 }else{
   if(ENscore>=60){
-    print("­^???¤Î®æ¡A°ê???¦A¥[ªo")
+    print("è‹±???åŠæ ¼ï¼Œåœ‹???å†åŠ æ²¹")
   }else{
-    print("¥ş³¡¤£¤Î®æ")
+    print("å…¨éƒ¨ä¸åŠæ ¼")
   }
 }
 
 score<-80
-ifelse(score>=60,"¤Î®æ","¤£¤Î®æ")
+ifelse(score>=60,"åŠæ ¼","ä¸åŠæ ¼")
 scoreVector<-c(30,90,50,60,80)
-ifelse(scoreVector>=60,"¤Î®æ", "¤£¤Î®æ")
+ifelse(scoreVector>=60,"åŠæ ¼", "ä¸åŠæ ¼")
 
 for (n in 1:10){
-  #n¬°³æ???ÅÜ¼Æ¡A1:10¬°»İ­n³v???°õ???ªº°Ñ¼Æ¦V¶q
+  #nç‚ºå–®???è®Šæ•¸ï¼Œ1:10ç‚ºéœ€è¦é€???åŸ·???çš„åƒæ•¸å‘é‡
   print(n)
 }
 
@@ -112,21 +112,21 @@ while (i < 13){
   i <- i + 1
 }
 
-flip_results <- c() # «Ø¥ß???­ÓªÅªº¦V¶q¨Ó©ñ¸m¨C???¦¸§ëÂYªºµ²ªG
-coin <- c(TRUE, FALSE) # TRUE ¥Nªí¥¿???¡AFALSE ¥Nªí¤Ï???
-n_flips <- 1 # ±q²Ä???¦¸§ëÂY¶}©l°O¿ı
+flip_results <- c() # å»ºç«‹???å€‹ç©ºçš„å‘é‡ä¾†æ”¾ç½®æ¯???æ¬¡æŠ•æ“²çš„çµæœ
+coin <- c(TRUE, FALSE) # TRUE ä»£è¡¨æ­£???ï¼ŒFALSE ä»£è¡¨å???
+n_flips <- 1 # å¾ç¬¬???æ¬¡æŠ•æ“²é–‹å§‹è¨˜éŒ„
 while (sum(flip_results) < 3){
-  flip_results[n_flips] <- sample(coin, size = 1) # ±N¨C¦¸§ëÂYµ²ªG°O¿ı°_¨Ó
-  n_flips <- n_flips + 1 # ·Ç³Æ°O¿ı¤U???¦¸ªº§ëÂYµ²ªG
+  flip_results[n_flips] <- sample(coin, size = 1) # å°‡æ¯æ¬¡æŠ•æ“²çµæœè¨˜éŒ„èµ·ä¾†
+  n_flips <- n_flips + 1 # æº–å‚™è¨˜éŒ„ä¸‹???æ¬¡çš„æŠ•æ“²çµæœ
 }
-flip_results # ¦L¥X¨C¦¸§ëÂYªº¬ö¿ı
-length(flip_results) # Á`¦@§ëÂY¤F´X¦¸
+flip_results # å°å‡ºæ¯æ¬¡æŠ•æ“²çš„ç´€éŒ„
+length(flip_results) # ç¸½å…±æŠ•æ“²äº†å¹¾æ¬¡
 
 for (n in 1:10){
-  if(n%%2==0){ #°¸¼Æª½±µ¿é¥X¼Æ¦r
+  if(n%%2==0){ #å¶æ•¸ç›´æ¥è¼¸å‡ºæ•¸å­—
     print(n)
   }else{
-    print("©_¼Æ") #©_¼Æ«h¿é¥X"©_¼Æ"
+    print("å¥‡æ•¸") #å¥‡æ•¸å‰‡è¼¸å‡º"å¥‡æ•¸"
   }
 }
 
@@ -145,51 +145,51 @@ for (month in month.name){
     print(month)
   }
 }
-#µ´¹ï­È
+#çµ•å°å€¼
 abs(-5)
 abs(-5:-1)
-abs("Hello")#¿é¤J¤å¦r¬O·|¥X²{¿ù»~°T®§ªº
-#¶}®Ú¸¹
+abs("Hello")#è¼¸å…¥æ–‡å­—æ˜¯æœƒå‡ºç¾éŒ¯èª¤è¨Šæ¯çš„
+#é–‹æ ¹è™Ÿ
 sqrt(2)
 sqrt(1:10)
-#­ÈµL±ø¥ó¶i¦ì
+#å€¼ç„¡æ¢ä»¶é€²ä½
 ceiling(9.527)
 nums <- sqrt(c(7, 17, 27, 37, 47))
 nums
 ceiling(nums)
-#­ÈµL±ø¥ó±Ë¥h
+#å€¼ç„¡æ¢ä»¶æ¨å»
 floor(9.527)
 nums <- sqrt(c(7, 17, 27, 37, 47))
 nums
 floor(nums)
-#«ü©w«O¯d´X­Ó¤p¼Æ¦ì¼Æªº¨ç¼Æ¡A¥H¥|±Ë¤­¤Jªº³W«h¨M©w
+#æŒ‡å®šä¿ç•™å¹¾å€‹å°æ•¸ä½æ•¸çš„å‡½æ•¸ï¼Œä»¥å››æ¨äº”å…¥çš„è¦å‰‡æ±ºå®š
 round(9.527)
 round(9.527, digits = 0)
 round(9.527, digits = 1)
 round(9.527, digits = 2)
-#±N¿é¤Jªº¼Æ­È x Âà´«¬° ex ªº¨ç¼Æ
+#å°‡è¼¸å…¥çš„æ•¸å€¼ x è½‰æ›ç‚º ex çš„å‡½æ•¸
 exp(1)
 exp(2)
-#§@¥Î¸ò ln ¬Û¦P
+#ä½œç”¨è·Ÿ ln ç›¸åŒ
 log(exp(1))
 log(exp(2))
 log(exp(3))
-#§@¥Î¸ò log10 ¬Û¦P
+#ä½œç”¨è·Ÿ log10 ç›¸åŒ
 log10(10)
 log10(10^2)
 log10(10^3)
-#¤å¦r¥ş³¡Âà´«¬°¤j¼g
+#æ–‡å­—å…¨éƒ¨è½‰æ›ç‚ºå¤§å¯«
 toupper("Learn R the easy way")
-#¤å¦r¥ş³¡Âà´«¬°¤p¼g
+#æ–‡å­—å…¨éƒ¨è½‰æ›ç‚ºå°å¯«
 tolower("Learn R the easy way")
-#¤å¦rÂ^¨ú³¡¤À¥X¨Ó
+#æ–‡å­—æ“·å–éƒ¨åˆ†å‡ºä¾†
 my_char <- "Learn R the easy way"
 substr(my_char, start = 1, stop = 5)
 substr(my_char, start = 7, stop = 7)
 substr(my_char, start = 9, stop = 11)
 substr(my_char, start = 13, stop = 16)
 substr(my_char, start = 18, stop = 20)
-#¤å¦r¦V¶q¤¤·j´M¬YºØ¼Ë¦¡¨Ã±N²Å¦X¼Ë¦¡ªº¯Á¤Ş­È¦^¶Ç
+#æ–‡å­—å‘é‡ä¸­æœå°‹æŸç¨®æ¨£å¼ä¸¦å°‡ç¬¦åˆæ¨£å¼çš„ç´¢å¼•å€¼å›å‚³
 my_char <- c("Learn", "R", "the", "easy", "way")
 grep(pattern = "Learn", my_char)
 grep(pattern = "R", my_char)
@@ -197,23 +197,23 @@ grep(pattern = "the", my_char)
 grep(pattern = "easy", my_char)
 grep(pattern = "way", my_char)
 grep(pattern = "xyz", my_char)
-#¦b·j´M¼Ë¦¡ªº®É­Ô·|©¿²¤¤å¦rªº¤j¤p¼g
+#åœ¨æœå°‹æ¨£å¼çš„æ™‚å€™æœƒå¿½ç•¥æ–‡å­—çš„å¤§å°å¯«
 my_char <- c("Learn", "R", "the", "easy", "way")
 grep(pattern = "learn", my_char)
 integer(0)
 grep(pattern = "learn", my_char, ignore.case = TRUE)
-#·j´M¨ì¥H«áÁÙ¥i¥H«ü©w­n´À´«¬°¨ä¥Lªº¤å¦r
+#æœå°‹åˆ°ä»¥å¾Œé‚„å¯ä»¥æŒ‡å®šè¦æ›¿æ›ç‚ºå…¶ä»–çš„æ–‡å­—
 my_char <- c("Learn", "R", "the", "easy", "way")
 sub(pattern = "easy", replacement = "effortless", my_char)
 my_char <- c("Learn", "R", "the", "easy", "way")
 sub(pattern = "EASY", replacement = "effortless", my_char)
 sub(pattern = "EASY", replacement = "effortless", my_char, ignore.case = TRUE)
-#°÷±N¤@­Ó¤å¦r¤Á³Î¦¨¦V¶qªº¨ç¼Æ
+#å¤ å°‡ä¸€å€‹æ–‡å­—åˆ‡å‰²æˆå‘é‡çš„å‡½æ•¸
 my_char <- "Learn R the easy way"
-strsplit(my_char, split = " ") # ¨Ï¥Î¤@­ÓªÅ®æ§@¬°¤Á³Îªº®Ú¾Ú
+strsplit(my_char, split = " ") # ä½¿ç”¨ä¸€å€‹ç©ºæ ¼ä½œç‚ºåˆ‡å‰²çš„æ ¹æ“š
 my_char <- "Learn,R,the,easy,way"
-strsplit(my_char, split = ",") # ¨Ï¥Î¤@­Ó³r¸¹§@¬°¤Á³Îªº®Ú¾Ú
-#±N¤å¦r³sµ²°_¨Ó
+strsplit(my_char, split = ",") # ä½¿ç”¨ä¸€å€‹é€—è™Ÿä½œç‚ºåˆ‡å‰²çš„æ ¹æ“š
+#å°‡æ–‡å­—é€£çµèµ·ä¾†
 char_1 <- "Learn"
 char_2 <- "R"
 char_3 <- "the"
@@ -222,77 +222,77 @@ char_5 <- "way"
 paste(char_1, char_2, char_3, char_4, char_5)
 paste(char_1, char_2, char_3, char_4, char_5, sep = ",")
 paste(char_1, char_2, char_3, char_4, char_5, sep = "")
-#¼Æ­È¦V¶qªº¥­§¡­È¦^¶Ç
+#æ•¸å€¼å‘é‡çš„å¹³å‡å€¼å›å‚³
 my_seq <- 1:5
 mean(my_seq)
-my_seq <- c(my_seq, NA) # ¥[¤J £¸­Ó NA
-mean(my_seq) # ¿é¥X¬° NA
-mean(my_seq, na.rm = TRUE) # ±Æ°£¿òº|­È
-#¼Æ­È¦V¶qªº¼Ğ·Ç®t¦^¶Ç
+my_seq <- c(my_seq, NA) # åŠ å…¥ ã„§å€‹ NA
+mean(my_seq) # è¼¸å‡ºç‚º NA
+mean(my_seq, na.rm = TRUE) # æ’é™¤éºæ¼å€¼
+#æ•¸å€¼å‘é‡çš„æ¨™æº–å·®å›å‚³
 my_seq <- 1:5
 sd(my_seq)
-my_seq <- c(my_seq, NA) # ¥[¤J¤@­Ó NA
+my_seq <- c(my_seq, NA) # åŠ å…¥ä¸€å€‹ NA
 sd(my_seq)
-sd(my_seq, na.rm = TRUE) # ±Æ°£¿òº|­È
-#¼Æ­È¦V¶qªº¤¤¦ì¼Æ¦^¶Ç
+sd(my_seq, na.rm = TRUE) # æ’é™¤éºæ¼å€¼
+#æ•¸å€¼å‘é‡çš„ä¸­ä½æ•¸å›å‚³
 my_seq <- 1:5
 median(my_seq)
-my_seq <- c(my_seq, NA) # ¥[¤J¤@­Ó NA
+my_seq <- c(my_seq, NA) # åŠ å…¥ä¸€å€‹ NA
 median(my_seq)
-median(my_seq, na.rm = TRUE) # ±Æ°£¿òº|­È
-#¼Æ­È¦V¶qªº³Ì¤j­È»P³Ì¤p­È¦^¶Ç
+median(my_seq, na.rm = TRUE) # æ’é™¤éºæ¼å€¼
+#æ•¸å€¼å‘é‡çš„æœ€å¤§å€¼èˆ‡æœ€å°å€¼å›å‚³
 my_seq <- 1:5
 range(my_seq)
-my_seq <- c(my_seq, NA) # ¥[¤J¤@­Ó NA
+my_seq <- c(my_seq, NA) # åŠ å…¥ä¸€å€‹ NA
 range(my_seq)
-range(my_seq, na.rm = TRUE) # ±Æ°£¿òº|­È
-#¼Æ­È¦V¶q©Ò¦³¼Æ­È¥[Á`¦^¶Ç
+range(my_seq, na.rm = TRUE) # æ’é™¤éºæ¼å€¼
+#æ•¸å€¼å‘é‡æ‰€æœ‰æ•¸å€¼åŠ ç¸½å›å‚³
 my_seq <- 1:5
 sum(my_seq)
-my_seq <- c(my_seq, NA) # ¥[¤J¤@­Ó NA
+my_seq <- c(my_seq, NA) # åŠ å…¥ä¸€å€‹ NA
 sum(my_seq)
-sum(my_seq, na.rm = TRUE) # ±Æ°£¿òº|­È
-#¼Æ­È¦V¶qªº³Ì¤j­È¦^¶Ç
+sum(my_seq, na.rm = TRUE) # æ’é™¤éºæ¼å€¼
+#æ•¸å€¼å‘é‡çš„æœ€å¤§å€¼å›å‚³
 my_seq <- 1:5
 max(my_seq)
-my_seq <- c(my_seq, NA) # ¥[¤J¤@­Ó NA
+my_seq <- c(my_seq, NA) # åŠ å…¥ä¸€å€‹ NA
 max(my_seq)
-max(my_seq, na.rm = TRUE) # ±Æ°£¿òº|­È
-#¼Æ­È¦V¶qªº³Ì¤p­È¦^¶Ç
+max(my_seq, na.rm = TRUE) # æ’é™¤éºæ¼å€¼
+#æ•¸å€¼å‘é‡çš„æœ€å°å€¼å›å‚³
 my_seq <- 1:5
 min(my_seq)
-my_seq <- c(my_seq, NA) # ¥[¤J¤@­Ó NA
+my_seq <- c(my_seq, NA) # åŠ å…¥ä¸€å€‹ NA
 min(my_seq)
-min(my_seq, na.rm = TRUE) # ±Æ°£¿òº|­È
+min(my_seq, na.rm = TRUE) # æ’é™¤éºæ¼å€¼
 
-# ¦Û­q¨ç¼Æ
+# è‡ªè¨‚å‡½æ•¸
 my_squared <- function(x){
   y <- x^2
   return(y)
 }
-# ©I¥s¨ç¼Æ
+# å‘¼å«å‡½æ•¸
 my_squared(2)
 my_squared(-2:2)
 
-# ¦Û­q¨ç¼Æ
+# è‡ªè¨‚å‡½æ•¸
 circle_area <- function(r){
-  area <- pi * r^2 # R»y¨¥¦³¤º«Ø¶ê©P²v pi
+  area <- pi * r^2 # Rèªè¨€æœ‰å…§å»ºåœ“å‘¨ç‡ pi
   return(area)
 }
-# ©I¥s¨ç¼Æ
+# å‘¼å«å‡½æ•¸
 circle_area(3)
 circle_area(5)
 
-# ¦Û­q¨ç¼Æ
+# è‡ªè¨‚å‡½æ•¸
 circle_circum <- function(r){
-  circum <- 2 * pi * r # R »y¨¥¦³¤º«Ø¶ê©P²v pi
+  circum <- 2 * pi * r # R èªè¨€æœ‰å…§å»ºåœ“å‘¨ç‡ pi
   return(circum)
 }
-# ©I¥s¨ç¼Æ
+# å‘¼å«å‡½æ•¸
 circle_circum(3)
 circle_circum(5)
 
-# ¦Û­q¨ç¼Æ
+# è‡ªè¨‚å‡½æ•¸
 circle_calculator <- function(r, is_area){
   area <- pi * r^2
   circum <- 2 * pi * r
@@ -302,11 +302,11 @@ circle_calculator <- function(r, is_area){
     return(circum)
   }
 }
-# ©I¥s¨ç¼Æ
+# å‘¼å«å‡½æ•¸
 circle_calculator(3, is_area = TRUE)
 circle_calculator(3, is_area = FALSE)
 
-# ¦Û­q¨ç¼Æ
+# è‡ªè¨‚å‡½æ•¸
 circle_calculator <- function(r, is_area = TRUE){
   area <- pi * r^2
   circum <- 2 * pi * r
@@ -316,22 +316,22 @@ circle_calculator <- function(r, is_area = TRUE){
     return(circum)
   }
 }
-# ©I¥s¨ç¼Æ
+# å‘¼å«å‡½æ•¸
 circle_calculator(3)
 
-# ¦Û­q¨ç¼Æ
+# è‡ªè¨‚å‡½æ•¸
 circle_calculator <- function(r){
   area <- pi * r^2
   circum <- 2 * pi * r
-  ans_list <- list(area = area, circum = circum) # ¬°²M³æ¤¤ªºª«¥ó©R¦W¤è«K¥Î $ ¨ú¥Î???
+  ans_list <- list(area = area, circum = circum) # ç‚ºæ¸…å–®ä¸­çš„ç‰©ä»¶å‘½åæ–¹ä¾¿ç”¨ $ å–ç”¨???
   return(ans_list)
 }
-# ©I¥s¨ç¼Æ
+# å‘¼å«å‡½æ•¸
 circle_with_r_3 <- circle_calculator(3)
 circle_with_r_3$area
 circle_with_r_3$circum
 
-# ©w¸q¦Û­q¨ç¼Æ
+# å®šç¾©è‡ªè¨‚å‡½æ•¸
 ironmen_stats <- function(ironmen_vector) {
   max_ironmen <- max(ironmen_vector)
   min_ironmen <- min(ironmen_vector)
@@ -344,14 +344,14 @@ ironmen_stats <- function(ironmen_vector) {
   )
   return(stats_list)
 }
-# ©I¥s¦Û­q¨ç¼Æ
+# å‘¼å«è‡ªè¨‚å‡½æ•¸
 ironmen <- c(50, 8, 16, 12, 6, 62)
-paste("³Ì¦h¡G", ironmen_stats(ironmen)$max_ironmen, sep = '')
-paste("³Ì¤Ö¡G", ironmen_stats(ironmen)$min_ironmen, sep = '')
-paste("Á`²Õ¼Æ¡G", ironmen_stats(ironmen)$ttl_groups, sep = '')
-paste("Á`ÅK¤H¼Æ¡G", ironmen_stats(ironmen)$ttl_ironmen, sep = '')
+paste("æœ€å¤šï¼š", ironmen_stats(ironmen)$max_ironmen, sep = '')
+paste("æœ€å°‘ï¼š", ironmen_stats(ironmen)$min_ironmen, sep = '')
+paste("ç¸½çµ„æ•¸ï¼š", ironmen_stats(ironmen)$ttl_groups, sep = '')
+paste("ç¸½éµäººæ•¸ï¼š", ironmen_stats(ironmen)$ttl_ironmen, sep = '')
 
-# ¦Û­q¨ç¼Æ
+# è‡ªè¨‚å‡½æ•¸
 my_length <- function(x){
   counts <- 0
   for (i in x){
@@ -359,13 +359,13 @@ my_length <- function(x){
   }
   return(counts)
 }
-# «Ø¥ß¤@­Ó¦V¶q
+# å»ºç«‹ä¸€å€‹å‘é‡
 my_vec <- seq(from = 15, to = 87, by = 3)
-# ©I¥s¤º«Ø¡]¥~³¡¡^»P¦Û­q¨ç¼Æ
+# å‘¼å«å…§å»ºï¼ˆå¤–éƒ¨ï¼‰èˆ‡è‡ªè¨‚å‡½æ•¸
 length(my_vec)
 my_length(my_vec)
 
-# ¦Û­q¨ç¼Æ
+# è‡ªè¨‚å‡½æ•¸
 my_sum <- function(x){
   summation <- 0
   for (i in x){
@@ -373,11 +373,11 @@ my_sum <- function(x){
   }
   return(summation)
 }
-# ©I¥s¤º«Ø»P¦Û­q¨ç¼Æ
+# å‘¼å«å…§å»ºèˆ‡è‡ªè¨‚å‡½æ•¸
 sum(1:10)
 my_sum(1:10)
 
-# ©w¸q¦Û­q¨ç¼Æ
+# å®šç¾©è‡ªè¨‚å‡½æ•¸
 my_mean <- function(input_vector) {
   my_sum <- function(input_vector) {
     temp_sum <- 0
@@ -395,39 +395,39 @@ my_mean <- function(input_vector) {
   }
   return(my_sum(input_vector) / my_length(input_vector))
 }
-# ©I¥s¦Û­q¨ç¼Æ
+# å‘¼å«è‡ªè¨‚å‡½æ•¸
 my_vector <- c(51, 8, 18, 13, 6, 64)
 my_mean(my_vector)
 
-# ¦Û­q¨ç¼Æ:
+# è‡ªè¨‚å‡½æ•¸:
 clean_data <- function(df, impute_value){
   n_rows <- nrow(df)
   na_sum <- rep(NA, times = n_rows)
   for (i in 1:n_rows){
-    na_sum[i] <- sum(is.na(df[i, ])) # ­pºâ¨C­ÓÆ[´ú­È¦³´X­Ó NA
-    df[i, ][is.na(df[i, ])] <- impute_value # §â NA ¥Î¬Y­Ó¼Æ­È¨ú¥N
+    na_sum[i] <- sum(is.na(df[i, ])) # è¨ˆç®—æ¯å€‹è§€æ¸¬å€¼æœ‰å¹¾å€‹ NA
+    df[i, ][is.na(df[i, ])] <- impute_value # æŠŠ NA ç”¨æŸå€‹æ•¸å€¼å–ä»£
   }
-  complete_cases <- df[as.logical(!na_sum), ] # §â¨S¦³¥X²{ NA ªºÆ[´ú­È«O¯d¤U¨Ó
+  complete_cases <- df[as.logical(!na_sum), ] # æŠŠæ²’æœ‰å‡ºç¾ NA çš„è§€æ¸¬å€¼ä¿ç•™ä¸‹ä¾†
   imputed_data <- df
   df_list <- list(complete_cases = complete_cases, imputed_data = imputed_data)
   return(df_list)
 }
-# Âø¶ÃµL³¹ªº¸ê®Æ
+# é›œäº‚ç„¡ç« çš„è³‡æ–™
 messy_data <- data.frame(c(1, 2, 3, 4, NA), c(1, 2, 3, NA, 5), c(1, 2, NA, 4, 5))
 names(messy_data) <- c("a", "b", "c")
-# ©I¥s¨ç¼Æ
+# å‘¼å«å‡½æ•¸
 cleaned_data <- clean_data(messy_data, impute_value = 999)
 cleaned_data$complete_cases
 cleaned_data$imputed_data
 
-# ©w¸q¦Û­q¨ç¼Æ
+# å®šç¾©è‡ªè¨‚å‡½æ•¸
 exchange_sort <- function(input_vector, decreasing = FALSE) {
-  input_vector_cloned <- input_vector # ½Æ»s¤@­Ó¿é¤J¦V¶q
-  # »¼¼W±Æ§Ç
+  input_vector_cloned <- input_vector # è¤‡è£½ä¸€å€‹è¼¸å…¥å‘é‡
+  # éå¢æ’åº
   if (decreasing == FALSE) {
     for (i in 1:(length(input_vector) - 1)) {
       for (j in (i + 1):length(input_vector)) {
-        # ¦pªG«e¤@­Ó¼Æ¦r¤ñ«á¤@­Ó¼Æ¦r¤j«h¥æ´«¦ì¸m
+        # å¦‚æœå‰ä¸€å€‹æ•¸å­—æ¯”å¾Œä¸€å€‹æ•¸å­—å¤§å‰‡äº¤æ›ä½ç½®
         if (input_vector_cloned[i] > input_vector_cloned[j]) {
           temp <- input_vector_cloned[i]
           input_vector_cloned[i] <- input_vector_cloned[j]
@@ -435,11 +435,11 @@ exchange_sort <- function(input_vector, decreasing = FALSE) {
         }
       }
     }
-    # »¼´î±Æ§Ç
+    # éæ¸›æ’åº
   } else {
     for (i in 1:(length(input_vector) - 1)) {
       for (j in (i + 1):length(input_vector)) {
-        # ¦pªG«e???­Ó¼Æ¦r¤ñ«á???­Ó¼Æ¦r???«h¥æ´«¦ì¸m
+        # å¦‚æœå‰???å€‹æ•¸å­—æ¯”å¾Œ???å€‹æ•¸å­—???å‰‡äº¤æ›ä½ç½®
         if (input_vector_cloned[i] < input_vector_cloned[j]) {
           temp <- input_vector_cloned[i]
           input_vector_cloned[i] <- input_vector_cloned[j]
@@ -450,28 +450,28 @@ exchange_sort <- function(input_vector, decreasing = FALSE) {
   }
   return(input_vector_cloned)
 }
-# ©I¥s¦Û­q¨ç¼Æ
-my_vector <- round(runif(10) * 100) # ²£¥Í¤@²ÕÀH¾÷¼Æ
-my_vector # ¬İ¬İ¥¼±Æ§Ç«e
-exchange_sort(my_vector) # ¹w³]»¼¼W±Æ§Ç
-exchange_sort(my_vector, decreasing = TRUE) # «ü©w°Ñ¼Æ»¼´î±Æ§Ç
+# å‘¼å«è‡ªè¨‚å‡½æ•¸
+my_vector <- round(runif(10) * 100) # ç”¢ç”Ÿä¸€çµ„éš¨æ©Ÿæ•¸
+my_vector # çœ‹çœ‹æœªæ’åºå‰
+exchange_sort(my_vector) # é è¨­éå¢æ’åº
+exchange_sort(my_vector, decreasing = TRUE) # æŒ‡å®šåƒæ•¸éæ¸›æ’åº
 
-#°Î¦W¨ç¼Æ
+#åŒ¿åå‡½æ•¸
 ironmen <- c(50, 8, 16, 12, 6, 62)
 ironmen_articles <- sapply(ironmen, function(x) x * 30)
 ironmen_articles
 
-# ©w¸q¦Û­q¨ç¼Æ
+# å®šç¾©è‡ªè¨‚å‡½æ•¸
 my_square <- function(input_number) {
   tryCatch({
     ans <- input_number^2
     return(ans)
   },
   error = function(e) {
-    print("½Ğ¿é¤J¼Æ­È¡C")
+    print("è«‹è¼¸å…¥æ•¸å€¼ã€‚")
   }
   )
 }
-# ©I¥s¦Û­q¨ç¼Æ
+# å‘¼å«è‡ªè¨‚å‡½æ•¸
 my_square(3)
 my_square('ironmen')
